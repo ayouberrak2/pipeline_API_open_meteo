@@ -58,9 +58,4 @@ def merge_dataframe(df_cities,meteo_file):
 df_cites= pd.read_csv("data/bronze/cities.csv")
 meteo_file= Path("data/bronze/weather")
 
-print(merge_dataframe(df_cities=df_cites , meteo_file=meteo_file))
-
-
-
-
-
+merge_dataframe(df_cities=df_cites , meteo_file=meteo_file)
