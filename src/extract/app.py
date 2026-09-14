@@ -65,7 +65,7 @@ def get_meteo(city,lat,lng):
 
         return df_meteo
     except :
-        print
+        print("eror lors de appel de api")
 
 
 for _, row in df_cities.iterrows():
