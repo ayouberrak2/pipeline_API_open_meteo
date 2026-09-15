@@ -45,3 +45,17 @@ def precipitation_probability(pro):
         return 15
     else:
         return 25
+
+
+
+def risk_level(score):
+    if score <= 30:
+        return "LOW"
+    elif score <= 60:
+        return "MEDIUM"
+    elif score <= 80:
+        return "HIGH"
+    else:
+        return "CRITICAL"
+
+
