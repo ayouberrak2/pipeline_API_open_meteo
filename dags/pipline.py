@@ -18,7 +18,7 @@ from airflow.providers.standard.operators.python import PythonOperator
 with DAG(
     dag_id = "wheater_pipeline",
     start_date = datetime(2026,9,18),
-    schedule = None,
+    schedule = "@daily",
     catchup = False
 ) as dag :
     extract_task = PythonOperator(
